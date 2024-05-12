@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: #58586B;
+}
 .nav-bar{
     border: 1px solid red;
     width: 100%;
@@ -11,6 +14,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.about-me img{
+   
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 .sobre, .cursos{
     border: 1px solid green;
