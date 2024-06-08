@@ -3,92 +3,246 @@
     padding: 0;
     font-family: "Freeman", sans-serif;
     color: #EDEDD8;
+    list-style: none;
 }
+
+:root {
+    font-size: 62.5%;
+}
+
 body {
-    background-color: #1b1b32;
+    background-color: black;
 }
 nav{
     position: fixed;
     top: 0;
-    
-    border: 2px solid;
-
-    background-color: #151626;
-
     width: 100%;
-    height: 40px;
+   
     
 }
 nav ul {
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    gap: 30px;
+    justify-content: center;
     
-}
-nav ul li {
+    padding: 1.0rem;
+    gap: 3.0rem;
+
+    font-size: 1.6rem;
+
     list-style: none;
-    
-}
-.about-me{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    
-    margin-top: 60px;
-    margin-bottom: 25px;
-}
-.about-me p {
-    text-align: justify;
-    line-height: 30px;
-}
-.about-me img{
-   
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-.sobre, .cursos{
-    border: 3px solid;
-    width: 600px;
-    height: 500px;
-}
-.projetos{
-    border: 1px solid blue;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
-    gap: 50px;
-    margin-bottom: 25px;
-}
-.tec-estudadas{
     border: 1px solid green;
-    margin-bottom: 25px;
+    
     
 }
+main {
+    display: flex;
+    flex-direction: column;
 
-.teste {
-
-    width: 250px;
-    height: 260px;
-    border: 1px dotted blue;
+    margin-top: 6.0rem;
+    gap: 10.0rem;
 }
-.teste h3{
+
+section .descricao, .cursos {
+    display: flex;
+    align-items: center;
+   
+    width: 90%;
+    height: 24.0rem;
+
+    margin: auto;
+    
+
+    /* border: 2px solid green; */
+}
+
+.descricao img {
+
+    width: 8.0rem;
+    height: 8.0rem;
+   
+    
+}
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 0 auto auto 0.6rem;
+}
+
+.about-me p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: justify;
+    
+    margin: 0 auto auto 5px;
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects article{
+    width: 210px;
+    height: 210px;
+    border: 2px solid green;
+}
+
+#projects article .repo{
+   display: flex;
+   justify-content: center;
+}
+
+.rodape{
     display: flex;
     justify-content: center;
 }
-.teste span, a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsividade*/
+@media (min-width:320px) {
+    nav ul a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.2rem;
+        gap:  0.2rem;
+    }    
+    section .descricao, .cursos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+        width: 29.0rem;
+        height: 24.0rem;
+    
+        margin: auto;
+        
+    
+        border: 2px solid green;
+
+
+    }
+
+    .about-me p {
+        font-size: 1.0rem;
+        line-height: 1.5rem;
+        text-align: justify;
+        
+        margin: 0 auto auto 5px;
+    }
 }
 
-footer {
-    border: 1px solid blue;
-    margin-top: 25px;
+
+@media (min-width: 700px){
+   
+    
+    nav ul a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.5rem;
+        gap:  0.5rem;
+    }
+    main {
+        display: flex;
+      
+        align-items: center;
+
+        margin-top: 10.0rem;
+        gap: 15.0rem;
+       
+
+    }
+
+    section .descricao, .cursos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+        width: 42.0rem;
+        height: 40.0rem;
+    
+        margin: auto;
+        
+    
+        border: 2px solid green;
+    }
+    
+    .descricao img {
+    
+        width: 15.0rem;
+        height: 15.0rem;
+       
+
 }
+
+.about-me p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    text-align: justify;
+    
+    margin: 0 auto auto 5px;
+}
+
+    #projects article{
+        width: 35.0rem;
+        height: 35.0rem;
+        border: 2px solid green;
+    }
+
+    #projects article .repo{
+    display: flex;
+    justify-content: center;
+
+    font-size: 1.6rem;
+    }
+
+
+}
+
+
+
+
