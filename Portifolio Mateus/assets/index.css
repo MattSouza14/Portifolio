@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Freeman", sans-serif;
     color: #EDEDD8;
     list-style: none;
+    text-decoration: none;
 }
 
 :root {
@@ -13,235 +15,280 @@
 body {
     background-color: black;
 }
-nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-   
-    
-}
-nav ul {
+nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    padding: 1.0rem;
-    gap: 3.0rem;
 
-    font-size: 1.6rem;
+    width: 100%;
+    height: 2.5rem;
 
-    list-style: none;
+    gap: 5.0rem;
+
+    position: fixed;
+    top: 0;
 
     border: 1px solid green;
-    
-    
-}
-main {
-    display: flex;
-    flex-direction: column;
 
-    margin-top: 6.0rem;
-    gap: 10.0rem;
 }
-
-section .descricao, .cursos {
+nav ul a {
     display: flex;
     align-items: center;
-   
-    width: 90%;
-    height: 24.0rem;
+    justify-content: center;
 
-    margin: auto;
+    font-size: 1.5rem;
+
+    gap: 0.4rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     
+    
+}
+    
+.cursos, .descricao{
+    display: flex;
+    align-items: center;
+    
+    margin: 7.0rem 0;
 
-    /* border: 2px solid green; */
+    width: 45.6rem;
+    height: 32.6rem;
+
+    border: 1px solid green;
 }
 
 .descricao img {
+    width: 15.0rem;
+    height: 15.0rem;
 
-    width: 8.0rem;
-    height: 8.0rem;
-   
-    
+    border-radius: 50%;
+
+   margin: -2rem 0.5rem 0;
+
 }
-figure{
+.descricao figcaption {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 0.5rem auto;
+
+}
+
+.descricao p {
+    margin: 1.5rem 1.0rem 1.2rem ;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3rem;
+}
+
+ article {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
-    margin: 0 auto auto 0.6rem;
-}
+    width: 35.0rem;
+    height: 35.0rem;
 
-.about-me p {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-    text-align: justify;
     
-    margin: 0 auto auto 5px;
+    border: 1px solid green;
+
 }
 
-#projects{
+.tecnologias {
+
+    width: 90.0rem;
+    height: 14.0rem;
+
+    margin: 7.0rem auto;
+
+    border: 1px solid green;
+}
+
+ footer {
     display: flex;
     justify-content: center;
-    align-items: center;
-}
 
-#projects article{
-    width: 210px;
-    height: 210px;
-    border: 2px solid green;
-}
-
-#projects article .repo{
-   display: flex;
-   justify-content: center;
-}
-
-.rodape{
-    display: flex;
-    justify-content: center;
+    font-size: 1.5rem;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Responsividade*/
-@media (min-width:320px) {
-    nav ul a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        font-size: 1.2rem;
-        gap:  0.2rem;
-    }    
-    section .descricao, .cursos {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-       
-        width: 29.0rem;
-        height: 24.0rem;
-    
-        margin: auto;
-        
-    
-        border: 2px solid green;
-
-
+ /*Responsividade*/
+ 
+ @media (max-width: 1024px) {
+    :root {
+        font-size: 56.25%; /* 9px */
     }
 
-    .about-me p {
-        font-size: 1.0rem;
-        line-height: 1.5rem;
-        text-align: justify;
-        
-        margin: 0 auto auto 5px;
-    }
-}
-
-
-@media (min-width: 700px){
-   
-    
-    nav ul a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        font-size: 1.5rem;
-        gap:  0.5rem;
-    }
-    main {
-        display: flex;
-      
-        align-items: center;
-
-        margin-top: 10.0rem;
-        gap: 15.0rem;
-       
-
+    nav ul {
+        height: 3.5rem;
+        gap: 2.0rem;
     }
 
-    section .descricao, .cursos {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-       
-        width: 42.0rem;
-        height: 40.0rem;
-    
-        margin: auto;
-        
-    
-        border: 2px solid green;
+    .container {
+        flex-direction: column;
     }
-    
+
+    .cursos, .descricao {
+        width: 55.8rem;
+        height: 35.2rem;
+        margin: 6.0rem 0;
+    }
+
     .descricao img {
-    
-        width: 15.0rem;
-        height: 15.0rem;
-       
+        width: 10.0rem;
+        height: 10.0rem;
+        margin: auto 0.5rem 0;
+    }
 
-}
+    .descricao p {
+        font-size: 1.2rem;
+    }
 
-.about-me p {
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-    text-align: justify;
-    
-    margin: 0 auto auto 5px;
-}
-
-    #projects article{
-        width: 35.0rem;
+    article {
+        width: 45.0rem;
         height: 35.0rem;
-        border: 2px solid green;
     }
 
-    #projects article .repo{
-    display: flex;
-    justify-content: center;
-
-    font-size: 1.6rem;
+    .tecnologias {
+        width: 68.5rem;
+        height: 15.0rem;
     }
-
-
 }
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 50%; /* 8px */
+    }
+
+    nav ul {
+        height: auto;
+        gap: 4.0rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .cursos, .descricao  {
+        width: 50.0rem;
+        height: 28.7rem;
+        margin: 7.0rem 0;
+    }
+
+
+
+    .descricao img {
+        width: 6.0rem;
+        height: 6.0rem;
+        margin: 4.0rem 0.5rem 0;
+    }
+
+    .descricao p {
+        font-size: 1.0rem;
+        
+    }
+
+    article {
+        width: 35.0rem;
+        height: 30.5rem;
+    }
+    
+}
+/*Para celulares*/
+@media (max-width: 480px) {
+    :root {
+        font-size: 43.75%; /* 7px */
+    }
+
+    nav ul {
+        height: auto;
+        gap: 4.0rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .cursos, .descricao  {
+        width: 40.0rem;
+        height: 28.7rem;
+        margin: 7.0rem 0;
+    }
+
+
+
+    .descricao img {
+        width: 6.0rem;
+        height: 6.0rem;
+        margin: 4.0rem 0.5rem 0;
+    }
+
+    .descricao p {
+        font-size: 1.0rem;
+        
+    }
+
+    article {
+        width: 35.0rem;
+        height: 20.5rem;
+    }
+
+    .tecnologias {
+        width: 55.5rem;
+        height: 10.0rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
