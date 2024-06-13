@@ -121,8 +121,18 @@ nav ul a {
 
     font-size: 1.5rem;
 }
-
-
+.animated-ghost {
+    
+    animation: moveX 2s infinite alternate;
+}
+@keyframes moveX {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
 
 
  /*Responsividade*/
