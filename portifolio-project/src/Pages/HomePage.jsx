@@ -1,6 +1,10 @@
-
+import Descricao from "../Components/Descricao"
 export default function HomePage(){
     return(
-        <h1>Hello World</h1>
+       <main>
+            <Descricao/>
+           <h1>Oi</h1>
+
+       </main> 
     )
 }

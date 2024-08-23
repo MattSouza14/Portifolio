@@ -22,7 +22,7 @@ ul{
    
 
 }
-ul li{
+.navLinks li{
     text-align: center;
     align-content: center;
 
@@ -35,7 +35,7 @@ ul li{
 
 }
 
-ul li:hover{
+.navLinks li:hover{
     background-color: rgb(71, 70, 70);
     cursor: pointer;
 }
