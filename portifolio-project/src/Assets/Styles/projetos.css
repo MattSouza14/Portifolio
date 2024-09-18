@@ -1,0 +1,25 @@
+.projetosContainer {
+    border: 1px solid black;
+
+    width: 100%;
+    height: 650px;
+
+}
+
+.cardContainer{
+    border: 1px solid;
+    width: 350px;
+    height: 580px;
+}
+.imageContainer{
+    border: 1px solid;
+    width: 95%;
+    height: 200px;
+}
+
+.sobreProjeto{
+    border: 1px solid;
+
+    width: 70%;
+    height: 350px;
+}

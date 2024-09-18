@@ -4,21 +4,27 @@
     margin: 0 auto;
 
     border: 1px solid;
-    width: 70%;
-    height: 330px;
+    width: 90%;
+    height: 400px;
 }
 
 .descricao{
     border: 1px solid;
-    width: 60%;
-    height: 220px;
+    width: 65%;
+    height: 300px;
     margin: 40px auto auto 40px;
+}
+.descricao h1{
+    text-align: center;
 }
 
 .imagePerfil{
     border: 1px solid;
-    width: 30%;
-    height: 160px;
 
-    margin: 40px;
+    width: 250px;
+    height: 250px;
+
+    margin: 40px auto;
+
+    border-radius: 50%;
 }
