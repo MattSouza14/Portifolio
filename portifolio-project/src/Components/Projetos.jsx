@@ -7,7 +7,7 @@ export default function Projetos(){
 
         <>
         <section className='projetosContainer'>
-            <h2>Projetos</h2>
+           
             <CardProjeto/>
            
 

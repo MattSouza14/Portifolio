@@ -1,25 +1,21 @@
 import '../Assets/Styles/descricao.css'
+// import minhaFoto from "lembrar de escolher uma foto";
 
-export default function Descricao(){
-    return(
-        <>
-            <section className="sobre">
-                
-                    <div className='descricao'>
-                        <h1>Mateus Souza - Desenvolvedor Back-End</h1>
-                        <p>Sou um estudante de Analise e desenvolvimento de Sistemas atualmente com foco em Backend com 
-                            Java, mas tambem tenho interesse na área de Cyber Security, busco a primeira oportunidade no 
-                            mercado e tenho conhecimentos para atuar tanto como frontend e backend.
-                        </p>
-                    </div>
-                    <div className='imagePerfil'>
 
-                    </div>
-
-               
-
-            </section>
-
-        </>
-    )
+export default  function Descricao() {
+  return (
+    <section id="about">
+      <h2>Sobre Mim</h2>
+      <div className="about-content">
+        <img src="{minhaFoto}" alt="Mateus Souza" className="profile-pic" />
+        <p>
+          Olá, sou Mateus Souza, desenvolvedor backend com interesse em cibersegurança. 
+          Atualmente, estou estudando diversas tecnologias para aprimorar minhas habilidades 
+          no desenvolvimento de software.
+        </p>
+      </div>
+    </section>
+  );
 }
+
+

@@ -1,25 +1,18 @@
+import '../Assets/Styles/projetos.css'
 
-
-export default function CardProjeto(imagem, titulo, linguagens, repositorio, deploy, descricao){
-    return(
-        <>
-            <div className="cardContainer">
-                <div className="imageContainer">
-                    <img src="" alt="Foto do projeto" />
-                </div>
-                        <h1>Rookie Coder Network</h1>
-                <div className="sobreProjeto">
-                    <div className="informacoesProjeto">
-                        <div className="descricaoProjeto"></div>
-                        <div className="tecnologiasUsadas"></div>
-                    </div>
-                    <div className="linksProjeto">
-                        <button className="repositorioProjeto"><a href=""></a></button>
-                        <button className="deployDoProjeto"><a href=""></a></button>
-                    </div>
-                </div>
-
-            </div>
-        </>
-    )
+export default function CardProjeto() {
+  return (
+    <section id="projects">
+      <h2>Projetos</h2>
+      <div className="project-card">
+        <img src="projeto1.jpg" alt="Projeto 1" />
+        <h3>Título do Projeto </h3>
+        <p>Descrição do projeto 1. Tecnologias usadas: HTML, CSS, JavaScript.</p>
+        <a href="#">Ver Repositório</a>
+        <a href="#">Ver Deploy</a>
+      </div>
+    </section>
+  );
 }
+
+
