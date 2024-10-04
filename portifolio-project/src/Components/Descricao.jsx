@@ -6,14 +6,8 @@ export default  function Descricao() {
   return (
     <section id="about">
       <h2>Sobre Mim</h2>
-      <div className="about-content">
-        <img src="{minhaFoto}" alt="Mateus Souza" className="profile-pic" />
-        <p>
-          Olá, sou Mateus Souza, desenvolvedor backend com interesse em cibersegurança. 
-          Atualmente, estou estudando diversas tecnologias para aprimorar minhas habilidades 
-          no desenvolvimento de software.
-        </p>
-      </div>
+      <p>Sou um desenvolvedor FulltStack, apaixonado por tecnologia e em constante aprendizado.</p>
+      <img src="" alt="Foto do brabo" />
     </section>
   );
 }

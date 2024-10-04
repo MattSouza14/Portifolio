@@ -3,18 +3,15 @@ import '../Assets/Styles/header.css'
 
 export default function Header() {
   return (
-    <header>
-      <div className="logo">
-        <h1>Minha Logo</h1>
-      </div>
+    <header id="header">
+      <h1>Futura logo aqui tlgd</h1>
       <nav>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/mateus-souzaa/" target='_blank'>LinkedIn</a></li>
-          <li><a href="https://github.com/MattSouza14" target='_blank'>GitHub</a></li>
-          <li><a href="#" target='_blank'>Sobre Mim</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#" target='_blank'>Certificados</a></li>
-        </ul>
+        <a href="">Sobre Mim</a>
+        <a href="#projects">Projetos</a>
+        <a href="#technologies">Tecnologias</a>
+        <a href="">Certificados</a>
+        <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </nav>
     </header>
   );

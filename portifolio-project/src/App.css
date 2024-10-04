@@ -3,8 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: #EDFDFE;
+body {
+  background-color: #2b2b2b; 
+  color: #d0e8f2; 
+  font-family: Arial, sans-serif;
+  
 }
 a{
   text-decoration: none;
