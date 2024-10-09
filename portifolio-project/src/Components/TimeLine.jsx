@@ -1,11 +1,15 @@
 import '../Assets/Styles/timeLine.css'
 import TimelineItem from './TimelineItem';
 
-const Timeline = () => {
+export default function Timeline(){
   const formations = [
-    { year: '2023 - Presente', title: 'Análise e Desenvolvimento de Sistemas', institution: 'Faculdade CDL', status: 'Em andamento' }
+    { 
+        year: '2023 - Presente', 
+        title: 'Análise e Desenvolvimento de Sistemas', 
+        institution: 'Faculdade CDL', 
+        status: 'Em andamento' }
    
-  ];
+  ]
 
   return (
     <section className="timeline">
@@ -24,7 +28,7 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+
 
 
 
