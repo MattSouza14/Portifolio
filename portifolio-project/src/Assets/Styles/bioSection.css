@@ -1,0 +1,13 @@
+.bio {
+    padding: 40px;
+    text-align: center;
+}
+
+.bio h2 {
+    color: #1abc9c;
+}
+
+.bio p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}

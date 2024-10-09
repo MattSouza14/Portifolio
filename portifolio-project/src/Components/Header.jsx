@@ -1,6 +1,5 @@
 import '../Assets/Styles/header.css'
-
-
+//Lembra de fazer logo
 export default function Header() {
   return (
     <header id="header">
@@ -10,8 +9,8 @@ export default function Header() {
         <a href="#projects">Projetos</a>
         <a href="#technologies">Tecnologias</a>
         <a href="">Certificados</a>
-        <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/seu-usuario" target="_blank">LinkedIn</a>
       </nav>
     </header>
   );

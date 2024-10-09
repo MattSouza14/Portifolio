@@ -1,0 +1,45 @@
+.card-timeline {
+    background-color: #34495E;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .title-timeline {
+    font-size: 18px;
+    color: #1abc9c;
+  }
+  
+  .year-timeline {
+    color: #1abc9c;
+    font-weight: bold;
+  }
+  
+  .card-body-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .institution-timeline {
+    font-size: 14px;
+    color: #ecf0f1;
+  }
+  
+  .status-timeline.concluido {
+    color: green;
+  }
+  
+  .status-timeline.andamento {
+    color: yellow;
+  }
+  

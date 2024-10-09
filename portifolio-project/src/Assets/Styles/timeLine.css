@@ -1,0 +1,19 @@
+#timeline-section {
+    padding: 40px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+  }
+  
+  .section-title-timeline {
+    font-size: 24px;
+    color: #1abc9c;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
